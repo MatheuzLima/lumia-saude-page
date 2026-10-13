@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lumina Saúde Integrada | Clínica multidisciplinar — agende pelo WhatsApp</title>
+  <meta name="description" content="Clínica multidisciplinar com clínico geral, pediatria, cardiologia, dermatologia, nutrição e psicologia no mesmo lugar. Faça a triagem rápida e agende pelo WhatsApp em minutos.">
+  <meta name="theme-color" content="#0f5e5b">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Lumina Saúde Integrada | Cuidado completo em um só lugar">
+  <meta property="og:description" content="Especialistas no mesmo lugar, atendimento humano e agendamento pelo WhatsApp em minutos.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <script>document.documentElement.classList.add('js')</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap">
+  <link rel="stylesheet" href="assets/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "Lumina Saúde Integrada",
+    "description": "Clínica médica multidisciplinar com atendimento humanizado e agendamento pelo WhatsApp.",
+    "medicalSpecialty": ["PrimaryCare", "Pediatric", "Cardiovascular", "Dermatology", "Gynecologic", "Orthopedic"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua das Acácias, 482",
+      "addressLocality": "São José dos Campos",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "07:00", "closes": "20:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "13:00" }
+    ],
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "1200" }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Ícones (sprite) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M12 6.5V12l3.5 2"/></g></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></g></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></g></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-users" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></g></symbol>
+      <symbol id="i-file" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></g></symbol>
+      <symbol id="i-alert" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></g></symbol>
+      <!-- Especialidades -->
+      <symbol id="s-geral" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3H5a1 1 0 0 0-1 1v4a5 5 0 0 0 10 0V4a1 1 0 0 0-1-1h-1"/><path d="M9 13v1.5a5.5 5.5 0 0 0 11 0V12"/><circle cx="20" cy="10" r="2"/></g></symbol>
+      <symbol id="s-pediatria" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9.5h.01M15 9.5h.01"/></g></symbol>
+      <symbol id="s-cardio" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7Z"/><path d="M3.2 12h6.3l.5-1 2 4.5 2-7 1.5 3.5h5.3"/></g></symbol>
+      <symbol id="s-derma" viewBox="0 0 24 24"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="s-gineco" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="5.5"/><path d="M12 14.5V22M9 19h6"/></g></symbol>
+      <symbol id="s-orto" viewBox="0 0 24 24"><path d="M17 10c.7-.7 1.7 0 2.5 0a2.5 2.5 0 1 0 0-5 .5.5 0 0 1-.5-.5 2.5 2.5 0 1 0-5 0c0 .8.7 1.8 0 2.5l-7 7c-.7.7-1.7 0-2.5 0a2.5 2.5 0 0 0 0 5c.3 0 .5.2.5.5a2.5 2.5 0 1 0 5 0c0-.8-.7-1.8 0-2.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="s-nutri" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.9c1.5 0 2.8 1.1 4 1.1 3 0 6-8 6-12.2A4.9 4.9 0 0 0 17 5c-2.2 0-4 1.4-5 2-1-.6-2.8-2-5-2a4.9 4.9 0 0 0-5 4.8C2 14 5 22 8 22c1.3 0 2.5-1.1 4-1.1Z"/><path d="M10 2c1 .5 2 2 2 5"/></g></symbol>
+      <symbol id="s-psico" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path d="M12 14.2s-2.6-1.6-2.6-3.2a1.5 1.5 0 0 1 2.6-.9 1.5 1.5 0 0 1 2.6.9c0 1.6-2.6 3.2-2.6 3.2z"/></g></symbol>
+      <symbol id="s-exames" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></g></symbol>
+    </defs>
+  </svg>
+
+  <!-- Faixa superior -->
+  <div class="topbar">
+    <div class="container topbar__in">
+      <span class="status" id="openStatus" aria-live="polite"><i class="status__dot"></i><span>Atendimento seg–sex 7h–20h · sáb 8h–13h</span></span>
+      <span class="topbar__tag"><svg class="ic" aria-hidden="true"><use href="#i-shield"/></svg> Convênios e atendimento particular</span>
+    </div>
+  </div>
+
+  <!-- Cabeçalho -->
+  <header class="header" id="topo">
+    <div class="container header__in">
+      <a class="brand" href="#topo" aria-label="Lumina Saúde Integrada — início">
+        <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true">
+          <rect width="40" height="40" rx="12" fill="#0f5e5b"/>
+          <path d="M20 8.5c.7 4.6 2.4 6.3 7 7-4.6.7-6.3 2.4-7 7-.7-4.6-2.4-6.3-7-7 4.6-.7 6.3-2.4 7-7Z" fill="#8be3d6"/>
+          <path d="M26.5 22.5c.4 2.6 1.4 3.6 4 4-2.6.4-3.6 1.4-4 4-.4-2.6-1.4-3.6-4-4 2.6-.4 3.6-1.4 4-4Z" fill="#fff"/>
+        </svg>
+        <span class="brand__text"><strong>Lumina</strong><small>Saúde Integrada</small></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="#especialidades">Especialidades</a>
+        <a href="#triagem">Triagem rápida</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#equipe">Equipe</a>
+        <a href="#duvidas">Dúvidas</a>
+        <a href="#contato">Contato</a>
+        <a class="btn btn--wa btn--block nav__cta" href="#contato" data-wa data-wa-msg="Olá! Gostaria de agendar uma consulta na Lumina Saúde." data-track="header_mobile">
+          <svg class="ic" aria-hidden="true"><use href="#i-whatsapp"/></svg> Agendar pelo WhatsApp
+        </a>
+      </nav>
+
+      <a class="btn btn--wa header__cta" href="#contato" data-wa data-wa-msg="Olá! Gostaria de agendar uma consulta na Lumina Saúde." data-track="header">
+        <svg class="ic" aria-hidden="true"><use href="#i-whatsapp"/></svg> Agendar consulta
+      </a>
+      <button class="burger" id="burger" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        <svg class="ic ic--open" aria-hidden="true"><use href="#i-menu"/></svg>
+        <svg class="ic ic--close" aria-hidden="true"><use href="#i-x"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__in">
+        <div class="hero__copy">
+          <p class="eyebrow">Clínica multidisciplinar</p>
+          <h1>Cuidado completo em um só lugar, <em>com a atenção que você merece.</em></h1>
+          <p class="lead">Clínico geral, pediatria, cardiologia, dermatologia, nutrição e psicologia sob o mesmo teto. Conte o que precisa e agende pelo WhatsApp em poucos minutos — sem fila, sem burocracia.</p>
+          <div class="hero__actions">
+            <a class="btn btn--wa btn--lg" href="#contato" data-wa data-wa-msg="Olá! Gostaria de agendar uma consulta na Lumina Saúde." data-track="hero_primary">
+              <svg class="ic" aria-hidden="true"><use href="#i-whatsapp"/></svg> Agendar pelo WhatsApp
+            </a>
+            <a class="btn btn--ghost btn--lg" href="#triagem">Fazer triagem rápida <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+          <ul class="trust" aria-label="Diferenciais">
+            <li><span class="stars" aria-hidden="true"><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg></span><b>4,9</b> <span>(+1.200 avaliações)</span></li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg> Resposta em poucos minutos</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-shield"/></svg> Principais convênios</li>
+          </ul>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="chat">
+            <div class="chat__head">
+              <span class="chat__avatar">L</span>
+              <div><strong>Lumina Saúde</strong><small>online agora</small></div>
+            </div>
+            <div class="chat__body">
+              <p class="msg msg--in" style="--d:.4s">Olá! 👋 Como podemos cuidar de você hoje?</p>
+              <p class="msg msg--out" style="--d:1.3s">Quero marcar dermatologia. Tem horário essa semana?</p>
+              <p class="msg msg--in" style="--d:2.3s">Temos <b>hoje às 16:30</b> com a Dra. Helena. Posso reservar para você?</p>
+              <p class="msg msg--out" style="--d:3.3s">Pode reservar! ✅</p>
+            </div>
+            <div class="chat__confirm" style="--d:4.2s">
+              <svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>
+              <div><strong>Consulta confirmada</strong><small>Hoje · 16:30 · Dermatologia</small></div>
+            </div>
+          </div>
+          <div class="float float--a"><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg> Resposta em ~2 min</div>
+          <div class="float float--b"><svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg> Atendimento humanizado</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Números -->
+    <section class="stats" aria-label="A Lumina em números">
+      <div class="container stats__in">
+        <div><strong>+12 mil</strong><span>pacientes atendidos</span></div>
+        <div><strong>18</strong><span>especialistas no time</span></div>
+        <div><strong>4,9/5</strong><span>nota média de atendimento</span></div>
+        <div><strong>9 anos</strong><span>cuidando da sua região</span></div>
+      </div>
+    </section>
+
+    <!-- Especialidades -->
+    <section class="section" id="especialidades">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Especialidades</p>
+          <h2>Tudo o que sua família precisa, <em>sem rodar pela cidade</em></h2>
+          <p>Prontuário único e equipe integrada: você conta sua história uma vez, e todos os profissionais acompanham.</p>
+        </header>
+
+        <div class="chips" role="group" aria-label="Filtrar especialidades" id="specFilters">
+          <button type="button" class="chip is-on" data-filter="all" aria-pressed="true">Todas</button>
+          <button type="button" class="chip" data-filter="adulto" aria-pressed="false">Adultos</button>
+          <button type="button" class="chip" data-filter="infantil" aria-pressed="false">Crianças</button>
+          <button type="button" class="chip" data-filter="mulher" aria-pressed="false">Saúde da mulher</button>
+          <button type="button" class="chip" data-filter="bemestar" aria-pressed="false">Bem-estar</button>
+        </div>
+
+        <ul class="specs" id="specGrid">
+          <li class="spec reveal" data-cat="adulto infantil">
+            <span class="spec__ic"><svg class="ic" aria-hidden="true"><use href="#s-geral"/></svg></span>
+            <h3>Clínica Geral</h3>
+            <p>Porta de entrada para o seu cuidado: avaliação completa, orientação e encaminhamentos.</p>
+            <a class="spec__link" href="#contato" data-wa data-wa-msg="Olá! Gostaria de agendar uma consulta de Clínica Geral." data-track="spec_clinica_geral">Agendar <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </li>
+          <li class="spec reveal" data-cat="infantil">
+            <span class="spec__ic"><svg class="ic" aria-hidden="true"><use href="#s-pediatria"/></svg></span>
+            <h3>Pediatria</h3>
+            <p>Acompanhamento do crescimento e do desenvolvimento, do recém-nascido ao adolescente.</p>
+            <a class="spec__link" href="#contato" data-wa data-wa-msg="Olá! Gostaria de agendar uma consulta de Pediatria." data-track="spec_pediatria">Agendar <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </li>
+          <li class="spec reveal" data-cat="adulto">
+            <span class="spec__ic"><svg class="ic" aria-hidden="true"><use href="#s-cardio"/></svg></span>
+            <h3>Cardiologia</h3>
+            <p>Prevenção e acompanhamento da saúde do coração, pressão arterial e exames de rotina.</p>
+            <a class="spec__link" href="#contato" data-wa data-wa-msg="Olá! Gostaria de agendar uma consulta de Cardiologia." data-track="spec_cardiologia">Agendar <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </li>
+          <li class="spec reveal" data-cat="adulto mulher infantil">
+            <span class="spec__ic"><svg class="ic" aria-hidden="true"><use href="#s-derma"/></svg></span>
+            <h3>Dermatologia</h3>
+            <p>Cuidados clínicos com pele, cabelos e unhas, para todas as idades.</p>
+            <a class="spec__link" href="#contato" data-wa data-wa-msg="Olá! Gostaria de agendar uma consulta de Dermatologia." data-track="spec_dermatologia">Agendar <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </li>
+          <li class="spec reveal" data-cat="mulher">
+            <span class="spec__ic"><svg class="ic" aria-hidden="true"><use href="#s-gineco"/></svg></span>
+            <h3>Ginecologia</h3>
+            <p>Consultas de rotina, prevenção e acompanhamento em todas as fases da vida.</p>
+            <a class="spec__link" href="#contato" data-wa data-wa-msg="Olá! Gostaria de agendar uma consulta de Ginecologia." data-track="spec_ginecologia">Agendar <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </li>
+          <li class="spec reveal" data-cat="adulto">
+            <span class="spec__ic"><svg class="ic" aria-hidden="true"><use href="#s-orto"/></svg></span>
+            <h3>Ortopedia</h3>
+            <p>Avaliação de dores musculares e articulares, com orientação sobre o melhor caminho.</p>
+            <a class="spec__link" href="#contato" data-wa data-wa-msg="Olá! Gostaria de agendar uma consulta de Ortopedia." data-track="spec_ortopedia">Agendar <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </li>
+          <li class="spec reveal" data-cat="bemestar adulto infantil">
+            <span class="spec__ic"><svg class="ic" aria-hidden="true"><use href="#s-nutri"/></svg></span>
+            <h3>Nutrição</h3>
+            <p>Plano alimentar individual, respeitando sua rotina, seus gostos e seus objetivos.</p>
+            <a class="spec__link" href="#contato" data-wa data-wa-msg="Olá! Gostaria de agendar uma consulta de Nutrição." data-track="spec_nutricao">Agendar <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </li>
+          <li class="spec reveal" data-cat="bemestar adulto infantil">
+            <span class="spec__ic"><svg class="ic" aria-hidden="true"><use href="#s-psico"/></svg></span>
+            <h3>Psicologia</h3>
+            <p>Espaço de escuta acolhedor e sigiloso para crianças, adolescentes e adultos.</p>
+            <a class="spec__link" href="#contato" data-wa data-wa-msg="Olá! Gostaria de agendar uma consulta de Psicologia." data-track="spec_psicologia">Agendar <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </li>
+          <li class="spec reveal" data-cat="adulto mulher bemestar">
+            <span class="spec__ic"><svg class="ic" aria-hidden="true"><use href="#s-exames"/></svg></span>
+            <h3>Check-up e exames</h3>
+            <p>Pacotes de exames de rotina com orientação médica e resultados integrados ao seu prontuário.</p>
+            <a class="spec__link" href="#contato" data-wa data-wa-msg="Olá! Gostaria de informações sobre check-up e exames." data-track="spec_checkup">Agendar <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Triagem -->
+    <section class="section section--tint" id="triagem">
+      <div class="container triage">
+        <header class="section__head section__head--left reveal">
+          <p class="eyebrow">Triagem ágil</p>
+          <h2>Responda 3 perguntas e <em>chegue ao WhatsApp com tudo pronto</em></h2>
+          <p>Nossa equipe recebe seu pedido já organizado e consegue te passar os horários mais rápido. Leva menos de um minuto.</p>
+          <ul class="ticks">
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg> Indicamos a especialidade mais adequada</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg> Mensagem pronta, é só enviar</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg> Sem cadastro e sem compromisso</li>
+          </ul>
+          <p class="note"><svg class="ic" aria-hidden="true"><use href="#i-alert"/></svg><span>A triagem organiza o agendamento e <b>não substitui avaliação médica</b>. Em urgência, ligue 192 (SAMU).</span></p>
+        </header>
+
+        <div class="wizard reveal" id="wizard" aria-live="polite">
+          <div class="wizard__bar" aria-hidden="true"><i id="wizBar"></i></div>
+          <div class="wizard__top">
+            <span id="wizStep">Passo 1 de 3</span>
+            <button type="button" class="link-btn" id="wizBack" hidden>← Voltar</button>
+          </div>
+          <div class="wizard__body" id="wizBody"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Como funciona -->
+    <section class="section" id="como-funciona">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Como funciona</p>
+          <h2>Do primeiro contato à consulta, <em>sem complicação</em></h2>
+        </header>
+        <ol class="steps">
+          <li class="step reveal"><span class="step__n">1</span><h3>Fale com a gente</h3><p>Chame no WhatsApp ou use a triagem rápida. Respondemos em poucos minutos, em horário de atendimento.</p></li>
+          <li class="step reveal"><span class="step__n">2</span><h3>Escolha o melhor horário</h3><p>Mostramos as opções disponíveis para a especialidade e confirmamos convênio ou valor particular.</p></li>
+          <li class="step reveal"><span class="step__n">3</span><h3>Seja bem atendido</h3><p>Você recebe lembrete antes da consulta e é recebido por uma equipe que já conhece o seu histórico.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Diferenciais -->
+    <section class="section section--dark" id="diferenciais">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow eyebrow--light">Por que a Lumina</p>
+          <h2>Medicina de verdade, <em>com cuidado de gente</em></h2>
+        </header>
+        <ul class="perks">
+          <li class="reveal"><svg class="ic" aria-hidden="true"><use href="#i-file"/></svg><h3>Prontuário único</h3><p>Seu histórico fica reunido e acessível a todos os profissionais que acompanham você.</p></li>
+          <li class="reveal"><svg class="ic" aria-hidden="true"><use href="#i-users"/></svg><h3>Equipe integrada</h3><p>Especialistas que conversam entre si para tratar a pessoa inteira, não só o sintoma.</p></li>
+          <li class="reveal"><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg><h3>Agilidade no agendamento</h3><p>Atendimento por WhatsApp, confirmação rápida e lembretes antes da consulta.</p></li>
+          <li class="reveal"><svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg><h3>Acolhimento</h3><p>Ambiente tranquilo, tempo de escuta e linguagem clara em cada atendimento.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Equipe -->
+    <section class="section" id="equipe">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Nossa equipe</p>
+          <h2>Profissionais que <em>escutam antes de receitar</em></h2>
+        </header>
+        <ul class="team">
+          <li class="doc reveal"><span class="doc__av" style="--h:174">HV</span><h3>Dra. Helena Vasconcelos</h3><p>Clínica Geral · Diretora clínica</p><small>CRM-SP 123456</small></li>
+          <li class="doc reveal"><span class="doc__av" style="--h:200">RM</span><h3>Dr. Rafael Moreira</h3><p>Cardiologia</p><small>CRM-SP 234567</small></li>
+          <li class="doc reveal"><span class="doc__av" style="--h:158">CD</span><h3>Dra. Camila Duarte</h3><p>Pediatria</p><small>CRM-SP 345678</small></li>
+          <li class="doc reveal"><span class="doc__av" style="--h:215">BN</span><h3>Beatriz Nogueira</h3><p>Psicologia</p><small>CRP 06/456789</small></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Avaliações -->
+    <section class="section section--tint" id="avaliacoes">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Avaliações sobre o atendimento</p>
+          <h2>Quem passa por aqui <em>costuma voltar</em></h2>
+        </header>
+        <ul class="quotes">
+          <li class="quote reveal">
+            <span class="stars" aria-label="5 de 5 estrelas"><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg></span>
+            <blockquote>Marquei pelo WhatsApp em dois minutos e fui atendida no mesmo dia. Equipe muito atenciosa.</blockquote>
+            <footer><b>Mariana S.</b> · mãe de paciente</footer>
+          </li>
+          <li class="quote reveal">
+            <span class="stars" aria-label="5 de 5 estrelas"><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg></span>
+            <blockquote>Gostei de ter vários especialistas no mesmo lugar. Não precisei repetir meu histórico em cada consulta.</blockquote>
+            <footer><b>Carlos A.</b> · paciente</footer>
+          </li>
+          <li class="quote reveal">
+            <span class="stars" aria-label="5 de 5 estrelas"><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg></span>
+            <blockquote>Ambiente acolhedor e sem espera longa. Me senti ouvida do começo ao fim da consulta.</blockquote>
+            <footer><b>Fernanda L.</b> · paciente</footer>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="duvidas">
+      <div class="container faq">
+        <header class="section__head section__head--left reveal">
+          <p class="eyebrow">Dúvidas frequentes</p>
+          <h2>Antes de agendar, <em>talvez você queira saber</em></h2>
+          <p>Não encontrou o que procurava? Chame a gente no WhatsApp.</p>
+          <a class="btn btn--wa" href="#contato" data-wa data-wa-msg="Olá! Tenho uma dúvida sobre a Lumina Saúde." data-track="faq_cta"><svg class="ic" aria-hidden="true"><use href="#i-whatsapp"/></svg> Tirar uma dúvida</a>
+        </header>
+        <div class="faq__list reveal">
+          <details open>
+            <summary>Quais convênios vocês aceitam?</summary>
+            <p>Trabalhamos com os principais convênios da região e também com atendimento particular. Como a cobertura varia por plano e especialidade, confirmamos tudo pelo WhatsApp antes de agendar.</p>
+          </details>
+          <details>
+            <summary>Como funciona o agendamento?</summary>
+            <p>Você chama no WhatsApp (ou usa a triagem rápida), informa a especialidade e a preferência de horário, e nossa equipe retorna com as opções disponíveis. A confirmação e o lembrete chegam pelo mesmo canal.</p>
+          </details>
+          <details>
+            <summary>Preciso levar algum documento na primeira consulta?</summary>
+            <p>Leve um documento com foto, a carteirinha do convênio (se for o caso) e exames ou receitas anteriores, caso tenha. Isso ajuda o profissional a conhecer o seu histórico.</p>
+          </details>
+          <details>
+            <summary>Posso remarcar ou cancelar?</summary>
+            <p>Sim. Basta avisar pelo WhatsApp com antecedência. Assim liberamos o horário para outro paciente e reorganizamos o seu atendimento.</p>
+          </details>
+          <details>
+            <summary>Os exames podem ser feitos na clínica?</summary>
+            <p>Oferecemos pacotes de check-up e coleta de exames de rotina, com orientação médica. Para exames específicos, indicamos laboratórios parceiros e os resultados entram no seu prontuário.</p>
+          </details>
+          <details>
+            <summary>E se for uma urgência?</summary>
+            <p>A Lumina não é pronto-socorro. Em caso de emergência — como dor forte no peito, falta de ar ou desmaio — ligue 192 (SAMU) ou procure o pronto-atendimento mais próximo.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="section section--tint" id="contato">
+      <div class="container contact">
+        <div class="contact__card reveal">
+          <p class="eyebrow">Contato</p>
+          <h2>Venha nos conhecer ou <em>fale agora pelo WhatsApp</em></h2>
+          <ul class="contact__list">
+            <li><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg><div><b>Rua das Acácias, 482</b><span>Jardim Botânico · São José dos Campos/SP</span></div></li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg><div><b>Seg–Sex 7h às 20h · Sáb 8h às 13h</b><span>Domingos e feriados fechado</span></div></li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><div><b>WhatsApp para agendamentos</b><span>Resposta em poucos minutos no horário de atendimento</span></div></li>
+          </ul>
+          <div class="contact__actions">
+            <a class="btn btn--wa btn--lg" href="#contato" data-wa data-wa-msg="Olá! Gostaria de agendar uma consulta na Lumina Saúde." data-track="contact_primary"><svg class="ic" aria-hidden="true"><use href="#i-whatsapp"/></svg> Agendar pelo WhatsApp</a>
+            <a class="btn btn--ghost btn--lg" href="https://www.google.com/maps/search/?api=1&query=Rua+das+Ac%C3%A1cias+482+S%C3%A3o+Jos%C3%A9+dos+Campos" target="_blank" rel="noopener">Ver no mapa</a>
+          </div>
+        </div>
+        <div class="map reveal" aria-hidden="true">
+          <svg viewBox="0 0 400 320" preserveAspectRatio="xMidYMid slice">
+            <rect width="400" height="320" fill="#e3f1ee"/>
+            <g fill="none" stroke="#fff" stroke-width="14" stroke-linecap="round">
+              <path d="M-10 90 L200 120 L410 70"/><path d="M60 -10 L90 330"/><path d="M250 -10 L210 330"/><path d="M-10 230 L410 250"/>
+            </g>
+            <g fill="none" stroke="#cfe5e1" stroke-width="3"><path d="M-10 90 L200 120 L410 70"/><path d="M60 -10 L90 330"/><path d="M250 -10 L210 330"/><path d="M-10 230 L410 250"/></g>
+            <rect x="285" y="150" width="90" height="60" rx="10" fill="#c8e6bf"/>
+            <rect x="105" y="150" width="60" height="55" rx="8" fill="#d7ebe7"/>
+            <g transform="translate(205 128)"><circle r="26" fill="#0f5e5b" opacity=".12"/><path d="M0 -20c-9 0-15 6.5-15 14.6C-15 4 0 20 0 20s15-16 15-25.4C15 -13.5 9 -20 0 -20Z" fill="#0f5e5b"/><circle cy="-5.5" r="5.5" fill="#fff"/></g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA final -->
+    <section class="cta">
+      <div class="container cta__in reveal">
+        <h2>Cuidar de você não precisa esperar.</h2>
+        <p>Chame agora e veja os horários disponíveis ainda esta semana.</p>
+        <a class="btn btn--white btn--lg" href="#contato" data-wa data-wa-msg="Olá! Gostaria de agendar uma consulta na Lumina Saúde." data-track="final_cta"><svg class="ic" aria-hidden="true"><use href="#i-whatsapp"/></svg> Agendar pelo WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__in">
+      <div>
+        <a class="brand brand--light" href="#topo" aria-label="Lumina Saúde Integrada">
+          <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="12" fill="#8be3d6"/><path d="M20 8.5c.7 4.6 2.4 6.3 7 7-4.6.7-6.3 2.4-7 7-.7-4.6-2.4-6.3-7-7 4.6-.7 6.3-2.4 7-7Z" fill="#0f5e5b"/><path d="M26.5 22.5c.4 2.6 1.4 3.6 4 4-2.6.4-3.6 1.4-4 4-.4-2.6-1.4-3.6-4-4 2.6-.4 3.6-1.4 4-4Z" fill="#0b3b3a"/></svg>
+          <span class="brand__text"><strong>Lumina</strong><small>Saúde Integrada</small></span>
+        </a>
+        <p class="footer__legal">Lumina Saúde Integrada Ltda · CNPJ 00.000.000/0001-00<br>Responsável técnica: Dra. Helena Vasconcelos — CRM-SP 123456</p>
+      </div>
+      <nav class="footer__nav" aria-label="Rodapé">
+        <a href="#especialidades">Especialidades</a>
+        <a href="#triagem">Triagem rápida</a>
+        <a href="#equipe">Equipe</a>
+        <a href="#duvidas">Dúvidas</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span id="year">2026</span> Lumina Saúde Integrada. Informações de caráter educativo; não substituem consulta médica.</span>
+      <span>Projeto de demonstração (dados fictícios) · Criado por <a href="https://website.matheuslima.site" target="_blank" rel="noopener">Matheus Lima</a></span>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flutuante + barra mobile -->
+  <a class="fab" href="#contato" data-wa data-wa-msg="Olá! Gostaria de agendar uma consulta na Lumina Saúde." data-track="floating" aria-label="Agendar pelo WhatsApp">
+    <svg class="ic" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+  </a>
+
+  <script src="assets/script.js" defer></script>
+</body>
+</html>
